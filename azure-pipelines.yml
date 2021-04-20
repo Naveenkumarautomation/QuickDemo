@@ -7,9 +7,13 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
 steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'export BROWSER=$(BROWSER)'
 - task: Maven@3
   inputs:
     mavenPomFile: 'SampleProject/pom.xml'
