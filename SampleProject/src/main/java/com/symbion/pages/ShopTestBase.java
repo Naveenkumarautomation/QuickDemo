@@ -15,7 +15,7 @@ public class ShopTestBase {
 /*	public static Properties prop;
 	public static FileInputStream fis;   */
 	public static WebDriver driver;
-	static String driverPath = "D:\\chromedriver_win32\\chromedriver.exe";
+	static String driverPath = "C:\\Program Files\\chromedriver_win32\\chromedriver.exe";
 	
 	public static void Home_Page_Launch() throws IOException, InterruptedException{
 /*		prop = new Properties();
